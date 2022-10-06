@@ -41,9 +41,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
 
 li {
   list-style: none;
@@ -70,38 +67,24 @@ li {
   overflow: hidden;
 }
 
-.header img {
-  position: absolute;
-  right: -5%;
-  bottom: 0;
-  width: 100rem;
-  z-index: -1;
-}
+
 
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 60vh;
   }
 
-  .header img {
-    width: 50rem;
-  }
+ 
 }
 
-@media only screen and (max-width: 768px) {
-  .header img {
-    width: 40rem;
-  }
-}
+
+
 
 @media only screen and (max-width: 567px) {
   .header {
     min-height: 100vh;
   }
 
-  .header img {
-    width: 35rem;
-  }
 }
 
 .nav {
@@ -339,27 +322,6 @@ li {
   }
 }
 
-
-/* Color Controls */
-
-.control {
-  position: fixed;
-  right: -4rem;
-  top: 15%;
-  transition: all 300ms ease-in-out;
-  z-index: 1000;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .control.open {
   right: 0;
 }
@@ -413,11 +375,7 @@ li {
   z-index: 1;
 }
 
-.left img {
-  height: 40rem;
-  max-width: 35rem;
-  object-fit: cover;
-}
+
 
 .right h1 {
   margin-bottom: 2rem;
@@ -467,10 +425,7 @@ a.btn:active {
     padding: 0.7rem 1.8rem;
   }
 
-  .left img {
-    height: 40rem;
-    max-width: 25rem;
-  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -483,10 +438,7 @@ a.btn:active {
     text-align: center;
   }
 
-  .left img {
-    height: 40rem;
-    max-width: 90%;
-  }
+  
 }
 
 /* Services */
@@ -537,207 +489,7 @@ a.btn:active {
   color: #fff;
 }
 
-/* Skills */
-
-.skills-box:not(:last-child) {
-  margin-bottom: 2rem;
-}
-
-.skills-box h4 {
-  font-size: 1.8rem;
-  color: #888;
-  font-size: 500;
-}
-
-.skills-box .skills-ilt {
-  width: 100%;
-  position: relative;
-  height: 0.4rem;
-  background-color: #ccc;
-  border-radius: 0.5rem;
-}
-
-.skills-box .skills-bar {
-  background-color: var(--customColor);
-  height: 0.4rem;
-}
-
-.skills-box .html {
-  width: 95%;
-}
-
-.skills-box .css {
-  width: 85%;
-}
-
-.skills-box .javascript {
-  width: 90%;
-}
-
-.skills-box .nodejs {
-  width: 80%;
-}
-
-.skills-box .mongodb {
-  width: 95%;
-}
-
-.skills-box span {
-  position: absolute;
-  bottom: 10%;
-  right: 0;
-  font-size: 1.4rem;
-}
-
-.skills-center {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-}
-
-.right h3 {
-  margin-bottom: 1rem;
-}
-
-.right p {
-  margin-bottom: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .skills-center {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Teams */
-.team {
-  color: #fff;
-  background-color: #111;
-  padding: 3rem;
-  text-align: center;
-  border-radius: 1rem;
-  border-bottom: 4px solid transparent;
-  transition: all 300ms ease-in-out;
-}
-
-.team .img-cover {
-  overflow: hidden;
-  border-radius: 100%;
-  border: 4px solid var(--customColor);
-  height: 13rem;
-  width: 13rem;
-  margin: 0 auto;
-  transition: all 300ms ease-in-out;
-}
-
-.team .img-cover img {
-  height: 100%;
-  object-fit: cover;
-}
-
-.team h3 {
-  font-size: 1.6rem;
-  margin: 1rem 0;
-}
-
-.team p {
-  font-size: 1.5rem;
-  color: #ccc;
-  width: 80%;
-  margin: 0 auto 1rem auto;
-}
-
-.team:hover {
-  border-bottom: 4px solid #fff;
-  background-color: var(--customColor);
-}
-
-.team:hover .img-cover {
-  border-color: #fff;
-}
-
-/* Contact */
-.contact-center {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.left h2 {
-  font-size: 2rem;
-}
-
-.left p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.left div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.left div .content {
-  text-align: left;
-}
-
-.left .icon {
-  margin-right: 2rem;
-  font-size: 2.3rem;
-  color: var(--customColor);
-}
-
-.form h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.form input,
-.form textarea {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  padding: 1rem 0;
-  text-indent: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  outline: none;
-}
-
-.form .right div {
-  display: flex;
-}
-
-.form .right div input {
-  flex: 1 1 50%;
-}
-
-.form textarea {
-  width: 100%;
-  resize: vertical;
-  margin-bottom: 3rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-center {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-center .left {
-    text-align: left;
-  }
-
-  .left div .content h3 {
-    font-size: 1.6rem;
-  }
-
-  .left div .content span {
-    font-size: 1.5rem;
-  }
-}
-
+/* footer */
 footer {
   background-color: #000;
   padding: 1.6rem 1rem;
