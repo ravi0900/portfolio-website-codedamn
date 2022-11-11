@@ -5,6 +5,9 @@
 
 We are building Personal Project Website using Html,CSS and JavaScript concepts. Your task is to create a website as shown in the cover image above.
 
+You can see the demo
+![Demo](https://portfolio-website-dfsgm.netlify.app/)
+
 ## Styles
  * here are suggested color and style used in. 
 
