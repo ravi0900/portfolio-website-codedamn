@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![Cover Image](https://raw.githubusercontent.com/ravi0900/portfolio-website-codedamn/master/assets/design/Preview1.gif)
+![Cover Image](https://raw.githubusercontent.com/ravi0900/portfolio-website-codedamn/master/assets/design/preview2.png)
 
 ### Design Preview
 
